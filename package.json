@@ -1,0 +1,54 @@
+{
+  "name": "fivem-server-doctor-mcp",
+  "version": "0.1.0",
+  "description": "Local MCP server that diagnoses common FiveM and txAdmin server/resource issues.",
+  "type": "module",
+  "bin": {
+    "fivem-server-doctor-mcp": "./dist/src/index.js"
+  },
+  "files": [
+    "dist/src",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc && node scripts/chmod-bin.js",
+    "test": "pnpm build && node --test dist/tests/*.test.js",
+    "prepack": "pnpm build",
+    "prepublishOnly": "pnpm test",
+    "start": "node dist/src/index.js"
+  },
+  "keywords": [
+    "fivem",
+    "txadmin",
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "codex",
+    "fxserver",
+    "fxmanifest"
+  ],
+  "author": "FiveMX",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Livvux/fivem-server-doctor-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Livvux/fivem-server-doctor-mcp/issues"
+  },
+  "homepage": "https://github.com/Livvux/fivem-server-doctor-mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.29.0",
+    "zod": "4.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "typescript": "5.9.3"
+  },
+  "packageManager": "pnpm@11.7.0"
+}
