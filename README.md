@@ -6,7 +6,7 @@ Local MCP server for Claude Desktop, Codex, and other MCP clients that answers o
 
 `fivem-server-doctor-mcp` reads local txAdmin/FiveM files over stdio, scans `server.cfg`, resource folders, manifests, and recent logs, then returns ranked findings with exact evidence. It can propose narrow text-file fixes and can apply only generated low-risk fixes when writes are explicitly enabled.
 
-Maintained by FiveMX. Sponsor link: [fivemx.com](https://fivemx.com).
+Maintained by FiveMX. Sponsor link: [RPScripts (formerly FiveMX)](https://rpscripts.net/).
 
 ## What It Detects
 
